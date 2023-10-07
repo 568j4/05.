@@ -6,19 +6,27 @@
 int main(int argc, char *argv[])
 
  {
-	int input;
-	
-	printf("input an integer:");
-	scanf("%d", &input);
-	
-	if (input > 0)
-	    printf("positive\n");
-	else if (input < 0) 
-	    printf("negative\n");
-	else
-	    printf("zero\n");
-	     
-	system("PAUSE");	      
-	return 0;
+ 	
+    int number;
+
+
+    printf("Input an integer: ");
+    scanf("%d", &number);
+
+
+    if (number < 0) {
+        number = -number;
+    }
+
+
+    printf("The absoulte value is %d\n", number);
+
+    return 0;
 }
+
+
+
+
+
+
 
